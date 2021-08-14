@@ -18,7 +18,7 @@ namespace UserAPI.Services
             var myWriter = new StringWriter();
             HttpUtility.HtmlDecode(content, myWriter);
             var htmlDecoded = myWriter.ToString();
-            smtpClient.Credentials = new System.Net.NetworkCredential("lanegoworld@gmail.com", "fxtgkjkchytbyjgm");
+            smtpClient.Credentials = new System.Net.NetworkCredential("", "");
             smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtpClient.EnableSsl = true;
             MailMessage mail = new MailMessage();
